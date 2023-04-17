@@ -1,4 +1,42 @@
-button {
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.logo-left {
+width: 44px;
+    height: 21px;
+font-family: 'Raleway';
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.17;
+display: flex;
+    align-items: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
     color: #4D5AE5;
-    background-color: #F4F4FD;
+}
+
+
+.logo {
+    width: 71px;
+        height: 21px;
+     font-family: 'Raleway';
+        font-weight: 800;
+        font-size: 18px;
+        line-height: 1.17;
+    display: flex;
+        align-items: center;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        text-decoration: none;
+        color: #2E2F42;
+}
+
+.link {
+    text-decoration: none;
+    font-style: normal;
+}
+
+.list {
+    list-style: none;
 }
