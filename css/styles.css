@@ -31,7 +31,7 @@ body {
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
-  color: var(--primary-text-color);
+  color: #2e2f42;
 }
 
 .section-title {
@@ -169,6 +169,7 @@ body {
 /*========== FILTERS ==========*/
 
 .filter-btn {
+  font-family: 'Roboto', sans-serif;
   background-color: #f4f4fd;
   font-weight: 500;
   font-size: 16px;
