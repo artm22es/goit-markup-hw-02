@@ -1,6 +1,15 @@
+:root {
+  --accent-color: #404bbf;
+  --primary-text-color: #2e2f42;
+  --secondary-text-color: #434455;
+}
+
 body {
   font-family: 'Roboto', sans-serif;
-  color: #434455;
+}
+
+a:visited {
+  color: inherit;
 }
 
 .link {
@@ -12,10 +21,36 @@ body {
   list-style: none;
 }
 
-/*==========HEADER==========*/
+/*========== COMPONENTS ==========*/
+.text {
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+  color: var(--secondary-text-color);
+}
+
+.subtitle {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--primary-text-color);
+}
+
+.section-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: var(--primary-text-color);
+}
+
+/*========== HEADER ==========*/
 .page-header {
   background-color: #ffffff;
 }
+
 .logo-left {
   width: 44px;
   height: 21px;
@@ -23,8 +58,6 @@ body {
   font-weight: 800;
   font-size: 18px;
   line-height: 1.17;
-  display: flex;
-  align-items: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #4d5ae5;
@@ -37,8 +70,6 @@ body {
   font-weight: 800;
   font-size: 18px;
   line-height: 1.17;
-  display: flex;
-  align-items: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   text-decoration: none;
@@ -50,33 +81,31 @@ body {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: #2e2f42;
+  color: var(--primary-text-color);
 }
 
 .menu-link:hover,
 .menu-link:focus {
-  color: #404bbf;
+  color: var(--accent-color);
 }
 
 .contact {
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: #434455;
+  color: var(--secondary-text-color);
 }
 
 .contact:hover,
 .contact:focus {
-  color: #404bbf;
+  color: var(--accent-color);
 }
 
-/*==========HERO==========*/
+/*========== HERO ==========*/
 .hero-title {
   font-weight: 700;
   font-size: 56px;
   line-height: 1.07;
-  text-align: center;
   letter-spacing: 0.02em;
   color: #ffffff;
 }
@@ -90,8 +119,6 @@ body {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
-  display: flex;
-  align-items: center;
   letter-spacing: 0.04em;
   color: #ffffff;
 }
@@ -102,71 +129,13 @@ body {
   cursor: pointer;
 }
 
-/*==========ADVANTAGES==========*/
-
-.adv-title {
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
-  letter-spacing: 0.02em;
-  color: #2e2f42;
-}
-
-.adv-text {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  color: #434455;
-}
-
-/*==========WE ARE DOING==========*/
-
-.exmpl-title {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.11;
-  text-align: center;
-  letter-spacing: 0.02em;
-  text-transform: capitalize;
-  color: #2e2f42;
-}
-
-/*==========OUR TEAM==========*/
+/*========== OUR TEAM ==========*/
 
 .team {
   background-color: #f4f4fd;
 }
 
-.team-title {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.11;
-  text-align: center;
-  letter-spacing: 0.02em;
-  text-transform: capitalize;
-  color: #2e2f42;
-}
-
-.team-member {
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
-  text-align: center;
-  letter-spacing: 0.02em;
-  color: #2e2f42;
-}
-
-.team-dscr {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
-  text-align: center;
-  letter-spacing: 0.02em;
-  color: #434455;
-}
-
-/*==========FOOTER==========*/
+/*========== FOOTER ==========*/
 
 .footer {
   background-color: #2e2f42;
@@ -178,8 +147,6 @@ body {
   font-weight: 800;
   font-size: 18px;
   line-height: 21px;
-  display: flex;
-  align-items: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   text-decoration: none;
@@ -187,25 +154,21 @@ body {
 }
 
 .footer-text {
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #f4f4fd;
 }
 
-/*==========PORTFOLIO PAGE==========*/
+/*========== PORTFOLIO PAGE ==========*/
 
-/*==========FILTERS==========*/
+/*========== FILTERS ==========*/
 
 .filter-btn {
   background-color: #f4f4fd;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
-  display: flex;
-  align-items: center;
-  text-align: center;
   letter-spacing: 0.04em;
   color: #4d5ae5;
 }
@@ -224,13 +187,12 @@ body {
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
-  color: #2e2f42;
+  color: var(--primary-text-color);
 }
 
 .portfolio-text {
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: #434455;
+  color: var(--secondary-text-color);
 }
